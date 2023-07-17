@@ -1,6 +1,38 @@
 /* Fonts Import END */
+@font-face {
+  font-family: 'Karla';
+  font-weight: 400;
+  src: url('../fonts/Karla-Regular.woff2') format('woff2'),
+    url('../fonts/Karla-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Karla';
+  font-weight: 700;
+  src: url('../fonts/Karla-Bold.woff2') format('woff2'),
+    url('../fonts/Karla-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  src: url('../fonts/DMSerifDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/DMSerifDisplay-Regular.woff') format('woff');
+}
 
 /* ROOT Styling END */
+
+:root {
+  --ff-heading: 'DM Serif Display', sans-serif;
+  --ff-body: 'Karla', sans-serif;
+
+  --clr-primary-100: #2d2640;
+  --clr-primary-200: #95a9c6;
+
+  --clr-neutral-300: #2b272f;
+  --clr-neutral-200: #837d87;
+  --clr-neutral-100: #fafafa;
+}
 
 /* Box sizing rules */
 *,
@@ -61,6 +93,10 @@ select {
   font: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -77,3 +113,5 @@ select {
   }
 }
 /* CSS Reset END */
+
+/* Generic Styles END */
